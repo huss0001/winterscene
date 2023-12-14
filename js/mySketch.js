@@ -8,6 +8,8 @@ function preload() {
   cabinSideCenterSW = loadImage("images/cabinSideCenter_SW.png");
   cabinDoor = loadImage("images/cabinDoor_SW.png");
   cabinRoofCenter = loadImage("images/cabinRoofCenter_NE.png");
+  wreath = loadImage("images/wreath_NE.png");
+  lightsNW = loadImage("images/lightsMulti_NW.png");
 }
 
 function setup() {
@@ -64,5 +66,9 @@ function drawCabin(x, y) {
   image(cabinRoofCenter, 40, -90);
   cabinSideCenterSW.resize(425, 0);
   image(cabinSideCenterSW, 45, -25);
+  wreath.resize(300, 0);
+  image(wreath, 105, 60);
+  image(lightsNW, 70, -45);
+  image(lightsNW, 135, -75);
   pop();
 }
