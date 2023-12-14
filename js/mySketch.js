@@ -9,22 +9,23 @@ function setup() {
     currentPalette = randomPalette();
     noStroke();
     background("white");
+    noLoop();
 }
 
 function draw() {
-    fill(random(currentPalette));
-    const x = random(0, width);
-    const y = random(0, height);
-    circle(x, y, 100);
+    
+
+
+
+
+    
+
+
+
+
 }
 
-function mouseClicked() {
-    background(255);
-    currentPalette = randomPalette();
-}
-
-function keyPressed() {
-    if (key === "s") {
-        save("my-p5-screenshot");
-    }
+function mousePressed() {
+    background(0);
+    redraw();
 }
