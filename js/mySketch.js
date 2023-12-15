@@ -37,6 +37,7 @@ function draw() {
   drawTrees(150, 300);
   drawTrees(50, 300);
   drawCabin(300, 50);
+  drawText(100, 20);
   drawSnowman(100, 70);
   drawSnowman(900, 70);
   drawSnowman(1700, 70);
@@ -139,4 +140,14 @@ function drawFence() {
   rectMode(CENTER);
   rect(-4000, 2500, 20000, 40);
   rect(-4000, 2550, 20000, 40);
+}
+
+function drawText(x, y) {
+  push();
+  translate(x, y);
+  textStyle(BOLD);
+  fill("red");
+  textFont("Courier New", 18);
+  text("☃️🎄🎅Merry Christmas Everyone!🎅🎄☃️", x, y);
+  pop();
 }
