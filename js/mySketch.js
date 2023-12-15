@@ -30,6 +30,8 @@ function draw() {
   drawCabin(300, 50);
   drawSnowman(100, 70);
   drawSnowman(900, 70);
+  drawSnowman(1700, 70);
+  drawFence();
 }
 
 function mousePressed() {
@@ -120,4 +122,18 @@ function drawSnowman(x, y) {
 
 
 
+}
+
+function drawFence() {
+			
+  for (let x = -8000; x < 6000; x += 100) {
+  noStroke();
+  fill(92, 64, 51);
+  rectMode(CENTER);
+  rect(x, 2500, 50, 200);
+  triangle(x + 75, 2400, x + 100, 2345, x + 125, 2400);
+}
+rectMode(CENTER);
+rect(-4000, 2500, 18500, 40);
+rect(-4000, 2550, 18500, 40);
 }
